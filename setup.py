@@ -12,18 +12,21 @@ Links
   <https://github.com/fengsp/flask-session/zipball/master#egg=Flask-dev>`_
 
 """
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 from setuptools import setup
 
-
 setup(
-    name='Flask-Session',
-    version='0.4.0',
-    url='https://github.com/fengsp/flask-session',
+    name='Flask-Session-Refresh-Option',
+    version='0.1.2',
+    url='https://github.com/luismigsantana/flask-session-not-refresh-option',
     license='BSD',
-    author='Shipeng Feng',
-    author_email='fsp261@gmail.com',
+    author='Luis Miguel Santana',
+    author_email='miguelsantanna.ms@gmail.com',
+    long_description_content_type="text/markdown",
     description='Adds server-side session support to your Flask application',
-    long_description=__doc__,
+    long_description=long_description,
     packages=['flask_session'],
     zip_safe=False,
     include_package_data=True,
